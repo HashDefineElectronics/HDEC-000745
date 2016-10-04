@@ -1,0 +1,8 @@
+Added Component: Designator=J2(M20-9990246)
+Added Component: Designator=R1(RES_0603)
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=PIC_OSC1 Pin=R1-2
+Added Pin To Net: NetName=PIC_\B\O\O\T\L\O\A\D\E\R\ Pin=J2-2
+Added Pin To Net: NetName=PIC_\B\O\O\T\L\O\A\D\E\R\ Pin=R1-1
+Added Pin To Net: NetName=PIC_\B\O\O\T\L\O\A\D\E\R\ Pin=U1-100
+Added Net: Name=PIC_\B\O\O\T\L\O\A\D\E\R\

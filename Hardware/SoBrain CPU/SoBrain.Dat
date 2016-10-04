@@ -1,0 +1,21 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~SoBrain.PrjPCB|ReportField=ProjectFullPath~C:\HDE_Projects\HDEC-000745 - SoBrain robot base board\Hardware\SoBrain CPU\SoBrain.PrjPCB|ReportField=Title~Bill of Materials For Project [SoBrain.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~40|ReportField=ReportTime~18:45:05|ReportField=ReportDate~05/01/2016|ReportField=ReportDateTime~05/01/2016 18:45:05|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~68 Concord Street|ReportField=Address2~Leeds, WY|ReportField=Address3~LS2 7QS|ReportField=Address4~United Kindom|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~05/01/2016|ReportField=CurrentTime~18:45:05|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\HDE_Projects\HDEC-000745 - SoBrain robot base board\Hardware\SoBrain CPU\Main.SchDoc|ReportField=DocumentName~Main.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~05/12/2015|ReportField=Organization~Hash define Electronics Ltd|ReportField=ProjectName~SoBrain.PrjPCB|ReportField=Revision~0|ReportField=Rule~|ReportField=SheetNumber~1|ReportField=SheetTotal~2|ReportField=Time~|ReportField=Title~SoBrain CPU|ReportField=DataSourceFileName~SoBrain.PrjPCB|ReportField=DataSourceFullPath~C:\HDE_Projects\HDEC-000745 - SoBrain robot base board\Hardware\SoBrain CPU\SoBrain.PrjPCB
+#NAME?|30pF, 50V, 0603, -55C to 125C, COG/NP0, 5%, 100nF, 10V, 0603, -55C to 125C, X7R, 10%|C1, C2, C3, C4, C5, C6, C7, C8, C10, C11, C12|CAP_0603|C0603C104K8RACTU, C0603C300J5GACTU|11
+#NAME?|10uF, 16V,  1206, -55C to 125C, X7R, 10%, Automotive|C9, C13|CAP_1206|C1206C106K4RACAUTO|2
+#NAME?|MLCC, X7R, 10uF, 50V, 1210|C14|CAP_1210|C1210C106K5RACTU|1
+#NAME?|1A, 200V, SMD Diode|D1|DO-214AC|S1D-E3/5AT|1
+LED|Green, 1206, SMD LED|D2, D3, D4, D5|LED_1206|KPTR-3216SGC|4
+#NAME?|500mA, SMD, 125v, -55C to 125C|F1|SMF_OMNI-BLOK|0154.500DRT|1
+#NAME?|ARM 10-Pin Serial Wire Connector (1.27mm)|J1|SHF-105-01-L-D-TH|DEBUG_PIC_JTAG_ICSP|1
+M20-9990246|2.54 Pitch, Pin Header|J2|M20-9990246|M20-9990246|1
+47590-0001|Micro USB, Top Mount|J3|47590-0001|47590-0001|1
+N/A|36way dual row 2.54mm socket. Board edge counter partconnector|J4|5530843-3_BoardEdge|5530843-3_BoardEdge|1
+MCSDRH73B-680MHF|68UH, 20%, 1.04A, 0.397ohm. inductor|L1|MCSDRH73B|MCSDRH73B-680MHF|1
+#NAME?|1K, 0603, 1%, 0.1W, resistor, 100K, 0603, 1%, 0.1W, Resistor|R1, R6, R7, R8, R9, R10|RES_0603|ERJ3EKF1001V, ERJ3EKF1003V|7
+MCWR06X1004FTL|1M, 0603, 1%, 62.5mW, resistor|R2|RES_0603|MCWR06X1004FTL|1
+MC0063W0603110K|10K, 0603, 1%, 0.063W, resistor|R3|RES_0603|MC0063W0603110K|1
+1-1437565-7|TACTILE SWITCH, SPST, 0.05A, 24V|SW1|1-1437565-7|1-1437565-7|1
+PIC32MZ1024ECG100-I/PT|PIC32, 1MB, 512KB, 200MHZ, TQFP-44|U1|TQFP100_0.5mm|PIC32MZ1024ECG100-I/PT|1
+#NAME?|3.3V, 500mA, DC-DC|U2|R-78E3.3-0.5|R-78E3.3-0.5|1
+IP4220CZ6,125|ESD PROTECTION, DUAL USB 2.0, 6TSOP|U3|TSOP6|IP4220CZ6,125|1
+#NAME?|33V, 1206, 180Apk, Clamp 75V|V1|1206_LittelFuse_Varistor|V33MLA1206NH|1
+ABLS-12.000MHZ-B4-T|CRYSTAL, 12MHZ, 18PF|X1|9C_Crystal|ABLS-12.000MHZ-B4-T|1

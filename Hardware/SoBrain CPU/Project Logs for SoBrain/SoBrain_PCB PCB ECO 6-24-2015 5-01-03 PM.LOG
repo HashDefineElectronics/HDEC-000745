@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=COMP_REFOUT Pin=J4-26
+Removed Pin From Net: NetName=COMP_NEG Pin=J4-28
+Removed Pin From Net: NetName=COMP_POS Pin=J4-30
+Removed Pin From Net: NetName=ADC_IN2 Pin=J4-32
+Removed Pin From Net: NetName=ADC_IN1 Pin=J4-33
+Removed Pin From Net: NetName=ADC_IN3 Pin=J4-34
+Added Pin To Net: NetName=ADC_IN1 Pin=J4-26
+Added Pin To Net: NetName=ADC_IN2 Pin=J4-28
+Added Pin To Net: NetName=ADC_IN3 Pin=J4-30
+Added Pin To Net: NetName=COMP_NEG Pin=J4-32
+Added Pin To Net: NetName=COMP_REFOUT Pin=J4-33
+Added Pin To Net: NetName=COMP_POS Pin=J4-34

@@ -1,0 +1,3 @@
+Change Net Name : Old Net Name=CAN1_RX_N New Net Name=CAN1_N
+Change Net Name : Old Net Name=CAN1_TX_P New Net Name=CAN1_P
+Added Differential Pair: Name=CAN1

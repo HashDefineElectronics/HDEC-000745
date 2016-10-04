@@ -1,0 +1,28 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION (( 'STEP AP214' ),
+    '1' );
+FILE_NAME ('Belt2-8.STEP',
+    '2016-09-28T20:28:03',
+    ( '' ),
+    ( '' ),
+    'SwSTEP 2.0',
+    'SolidWorks 2015',
+    '' );
+FILE_SCHEMA (( 'AUTOMOTIVE_DESIGN' ));
+ENDSEC;
+
+DATA;
+#1 = APPLICATION_PROTOCOL_DEFINITION ( 'draft international standard', 'automotive_design', 1998, #4 ) ;
+#2 = PRODUCT_CONTEXT ( 'NONE', #7, 'mechanical' ) ;
+#3 = PRODUCT_DEFINITION_CONTEXT ( 'detailed design', #4, 'design' ) ;
+#4 = APPLICATION_CONTEXT ( 'automotive_design' ) ;
+#5 = APPLICATION_PROTOCOL_DEFINITION ( 'draft international standard', 'automotive_design', 1998, #7 ) ;
+#6 = PRODUCT_DEFINITION ( 'UNKNOWN', '', #11, #3 ) ;
+#7 = APPLICATION_CONTEXT ( 'automotive_design' ) ;
+#8 = PRODUCT_DEFINITION_SHAPE ( 'NONE', 'NONE',  #6 ) ;
+#9 = PRODUCT ( 'Belt2-8', 'Belt2-8', '', ( #2 ) ) ;
+#10 = PRODUCT_RELATED_PRODUCT_CATEGORY ( 'part', '', ( #9 ) ) ;
+#11 = PRODUCT_DEFINITION_FORMATION_WITH_SPECIFIED_SOURCE ( 'ANY', '', #9, .NOT_KNOWN. ) ;
+ENDSEC;
+END-ISO-10303-21;
