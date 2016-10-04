@@ -6,4 +6,5 @@ https://www.hashdefineelectronics.com/micro-robot-development-platform-hdec-0007
 
 ## Video
 3D printing micro robot chassis (time lapse)
+
 [![#3 time lapse 3D printing micro robot chassis](http://img.youtube.com/vi/097JlulddWc/0.jpg)](https://youtu.be/097JlulddWc)
