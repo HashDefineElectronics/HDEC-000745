@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../HDE_PUB_LIB/Library
+LibDir=HDE_PUB_LIB/Library
 [eeschema/libraries]
 LibName1=HDEP_Capacitor
 LibName2=HDEP_Connectors
