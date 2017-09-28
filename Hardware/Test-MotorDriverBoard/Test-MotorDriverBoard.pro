@@ -1,4 +1,4 @@
-update=Thu 27 Oct 2016 22:27:16 BST
+update=Wed 27 Sep 2017 21:07:48 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../HDE_PUB_LIB/Library
@@ -46,3 +44,5 @@ LibName14=HDEP_Switches
 LibName15=HDEP_Transceivers
 LibName16=HDEP_TVS
 LibName17=HDEP_Varistors
+[general]
+version=1
