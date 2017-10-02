@@ -1,8 +1,8 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7-e2-6376~58~ubuntu17.04.1)
+(kicad_pcb (version 4) (host pcbnew 4.0.6-e0-6349~53~ubuntu16.04.1)
 
   (general
     (links 16)
-    (no_connects 16)
+    (no_connects 0)
     (area 135.924999 105.424999 146.075001 115.075001)
     (thickness 1.6)
     (drawings 8)
@@ -117,7 +117,7 @@
     (at 141.097 108.966)
     (descr "CAP, 1210 (Metric 3225)")
     (path /59CD305A)
-    (fp_text reference C1 (at 0 -0.127) (layer F.SilkS)
+    (fp_text reference C1 (at 0 -1.016) (layer F.SilkS)
       (effects (font (size 0.4 0.4) (thickness 0.1)))
     )
     (fp_text value C1210C106K5RACTU (at -0.33 2.54) (layer F.Fab)
