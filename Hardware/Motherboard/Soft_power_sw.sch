@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HDEP_Mosfet:NDS332P T?
+U 1 1 5AF7E41A
+P 2350 1450
+F 0 "T?" V 2767 1450 60  0000 C CNN
+F 1 "NDS332P" V 2661 1450 60  0000 C CNN
+F 2 "HDEP_IC:SOT323" H 2340 2760 60  0001 C CNN
+F 3 "" H 2400 1550 60  0001 C CNN
+F 4 "Farnell" H 2350 2550 60  0001 C CNN "Supplier"
+F 5 "9846379" H 2360 2460 60  0001 C CNN "Supplier No."
+F 6 "ON Semiconductor" H 2340 2230 60  0001 C CNN "Manufacture"
+F 7 "P Channel, 1 A, -20 V, 410 mohm, -4.5 V, -600 mV" H 2350 2140 60  0001 C CNN "C_Value"
+	1    2350 1450
+	0    1    -1   0   
+$EndComp
+$Comp
+L HDEP_Mechanical:VIN #PWR?
+U 1 1 5AF7E584
+P 1350 1100
+F 0 "#PWR?" H 1350 950 50  0001 C CNN
+F 1 "VIN" H 1355 1379 50  0000 C CNN
+F 2 "HDEP_" H 1355 1280 60  0000 C CNN
+F 3 "" H 1350 1100 60  0000 C CNN
+	1    1350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1100 1350 1350
+Wire Wire Line
+	1350 1350 2050 1350
+$Comp
+L HDEP_Mechanical:+5V #PWR?
+U 1 1 5AF7E5F9
+P 3350 1100
+F 0 "#PWR?" H 3350 950 50  0001 C CNN
+F 1 "+5V" H 3355 1379 50  0000 C CNN
+F 2 "HDEP_" H 3355 1280 60  0000 C CNN
+F 3 "" H 3350 1100 60  0000 C CNN
+	1    3350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1100 3350 1350
+Wire Wire Line
+	3350 1350 3100 1350
+$Comp
+L HDEP_Switches:1-1437565-7 SW?
+U 1 1 5AF7E686
+P 1350 3000
+F 0 "SW?" V 1456 3128 60  0000 L CNN
+F 1 "1-1437565-7" V 1350 3128 60  0000 L CNN
+F 2 "HDEP_Switches:1-1437565-7" H 1350 4000 60  0001 C CNN
+F 3 "" H 1070 2525 60  0001 C CNN
+F 4 "SPST, 0.05A, 24V, TACTILE SWITCH" H 1350 3400 60  0001 C CNN "Description"
+F 5 "TE CONNECTIVITY / ALCOSWITCH" H 1350 3500 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 1350 3850 60  0001 C CNN "Supplier"
+F 7 "2468759" H 1350 3750 60  0001 C CNN "Supplier No."
+F 8 "SPST" V 1244 3128 60  0000 L CNN "C_Value"
+	1    1350 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HDEP_Mosfet:PMF370XN,115 T?
+U 1 1 5AF7E99B
+P 2350 2550
+F 0 "T?" H 2608 2603 60  0000 L CNN
+F 1 "PMF370XN,115" H 1750 2800 60  0000 L CNN
+F 2 "HDEP_IC:SOT323" H 2340 3860 60  0001 C CNN
+F 3 "" H 2400 2650 60  0001 C CNN
+F 4 "Farnell" H 2350 3650 60  0001 C CNN "Supplier"
+F 5 "1758096" H 2360 3560 60  0001 C CNN "Supplier No."
+F 6 "NXP Semiconductors" H 2340 3330 60  0001 C CNN "Manufacture"
+F 7 "N Channel, 870 mA, 30 V, 0.37 ohm, 4.5 V, 1 V" H 2350 3240 60  0001 C CNN "C_Value"
+	1    2350 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HDEP_Resistors:MCWR04X1002FTL R?
+U 1 1 5AF7EE62
+P 1350 1725
+F 0 "R?" V 1244 1778 60  0000 L CNN
+F 1 "MCWR04X1002FTL" H 1025 1525 60  0000 L CNN
+F 2 "HDEP_Resistors:RES_0402" H 1350 2725 60  0001 C CNN
+F 3 "" H 1070 1250 60  0001 C CNN
+F 4 "10K 62.5mW 1% 50V 0402" H 1350 2125 60  0001 C CNN "Description"
+F 5 "MULTICOMP" H 1350 2225 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 1350 2575 60  0001 C CNN "Supplier"
+F 7 "2447096" H 1350 2475 60  0001 C CNN "Supplier No."
+F 8 "10K 62.5mW 1% 50V" H 925 1625 60  0000 L CNN "C_Value"
+	1    1350 1725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1500 1350 1350
+Connection ~ 1350 1350
+Wire Wire Line
+	1350 1950 1350 2000
+Wire Wire Line
+	1350 2000 2250 2000
+Wire Wire Line
+	2250 2000 2250 1650
+Wire Wire Line
+	2250 2250 2250 2000
+Connection ~ 2250 2000
+$Comp
+L HDEP_Mechanical:GND #PWR?
+U 1 1 5AF7F44D
+P 2250 3200
+F 0 "#PWR?" H 2250 2950 50  0001 C CNN
+F 1 "GND" H 2255 3027 50  0000 C CNN
+F 2 "HDEP_" H 2250 3200 60  0001 C CNN
+F 3 "" H 2250 3200 60  0000 C CNN
+	1    2250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2850 2250 3200
+Wire Wire Line
+	2550 2650 3100 2650
+$Comp
+L HDEP_Mechanical:GND #PWR?
+U 1 1 5AF7FDFB
+P 3100 3200
+F 0 "#PWR?" H 3100 2950 50  0001 C CNN
+F 1 "GND" H 3105 3027 50  0000 C CNN
+F 2 "HDEP_" H 3100 3200 60  0001 C CNN
+F 3 "" H 3100 3200 60  0000 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L HDEP_Resistors:MCWR04X1002FTL R?
+U 1 1 5AF803B9
+P 3100 1775
+F 0 "R?" V 2994 1828 60  0000 L CNN
+F 1 "MCWR04X1002FTL" V 3100 1828 60  0000 L CNN
+F 2 "HDEP_Resistors:RES_0402" H 3100 2775 60  0001 C CNN
+F 3 "" H 2820 1300 60  0001 C CNN
+F 4 "10K 62.5mW 1% 50V 0402" H 3100 2175 60  0001 C CNN "Description"
+F 5 "MULTICOMP" H 3100 2275 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 3100 2625 60  0001 C CNN "Supplier"
+F 7 "2447096" H 3100 2525 60  0001 C CNN "Supplier No."
+F 8 "10K 62.5mW 1% 50V" V 3206 1828 60  0000 L CNN "C_Value"
+	1    3100 1775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1350 3100 1550
+Connection ~ 3100 1350
+Wire Wire Line
+	3100 1350 2650 1350
+Wire Wire Line
+	3100 2650 3100 2000
+$Comp
+L HDEP_Resistors:ERJ3EKF1003V R?
+U 1 1 5AF81369
+P 3100 2925
+F 0 "R?" V 2994 2978 60  0000 L CNN
+F 1 "ERJ3EKF1003V" V 3100 2978 60  0000 L CNN
+F 2 "HDEP_Resistors:RES_0603" H 3100 3925 60  0001 C CNN
+F 3 "" H 2820 2450 60  0001 C CNN
+F 4 "100K, 0603, 1%, 0.1W" H 3100 3325 60  0001 C CNN "Description"
+F 5 "PANASONIC ELECTRONIC COMPONENTS" H 3100 3425 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 3100 3775 60  0001 C CNN "Supplier"
+F 7 "2303232" H 3100 3675 60  0001 C CNN "Supplier No."
+F 8 "100K 0.1W 1% 75V" V 3206 2978 60  0000 L CNN "C_Value"
+	1    3100 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2700 3100 2650
+Connection ~ 3100 2650
+Wire Wire Line
+	3100 3150 3100 3200
+Wire Wire Line
+	1350 2700 1350 2550
+Connection ~ 1350 2000
+Wire Wire Line
+	1650 3000 1650 3300
+Wire Wire Line
+	1650 3300 1350 3300
+$Comp
+L HDEP_Mechanical:GND #PWR?
+U 1 1 5AF82184
+P 1350 3400
+F 0 "#PWR?" H 1350 3150 50  0001 C CNN
+F 1 "GND" H 1355 3227 50  0000 C CNN
+F 2 "HDEP_" H 1350 3400 60  0001 C CNN
+F 3 "" H 1350 3400 60  0000 C CNN
+	1    1350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3300 1350 3400
+Connection ~ 1350 3300
+Wire Wire Line
+	3100 2650 3950 2650
+Text Label 3400 2650 0    50   ~ 0
+MCU_Power_En
+$Comp
+L HDEP_Resistors:ERJ3EKF1003V R?
+U 1 1 5AF82EEC
+P 2775 4000
+F 0 "R?" H 2750 4300 60  0000 C CNN
+F 1 "ERJ3EKF1003V" H 2700 4200 60  0000 C CNN
+F 2 "HDEP_Resistors:RES_0603" H 2775 5000 60  0001 C CNN
+F 3 "" H 2495 3525 60  0001 C CNN
+F 4 "100K, 0603, 1%, 0.1W" H 2775 4400 60  0001 C CNN "Description"
+F 5 "PANASONIC ELECTRONIC COMPONENTS" H 2775 4500 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 2775 4850 60  0001 C CNN "Supplier"
+F 7 "2303232" H 2775 4750 60  0001 C CNN "Supplier No."
+F 8 "100K 0.1W 1% 75V" H 2750 4100 60  0000 C CNN "C_Value"
+	1    2775 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 2550 1850 2550
+Wire Wire Line
+	1850 2550 1850 4000
+Wire Wire Line
+	1850 4000 2550 4000
+Connection ~ 1350 2550
+Wire Wire Line
+	1350 2550 1350 2000
+Wire Wire Line
+	3000 4000 3550 4000
+Text Label 3050 4000 0    50   ~ 0
+MCU_Power_Switch
+Text Notes 3750 1300 0    50   ~ 0
+Firmware Note: Turn on/Off device will require the user to hold the MCU_Power Switch for 2 Seconds. This will ensure their intension.\n\n1.  On power up, Keep MCU_Power_En low untill 2Sec.\n2. Power down: Keep MCU_Power_En Hight for 2Sec before setting it low. 
+$EndSCHEMATC

@@ -1,25 +1,9 @@
-EESchema Schematic File Version 2
-LIBS:HDEP_Capacitor
-LIBS:HDEP_Connectors
-LIBS:HDEP_Crystals
-LIBS:HDEP_Diodes
-LIBS:HDEP_Fuses
-LIBS:HDEP_IC
-LIBS:HDEP_Inductors
-LIBS:HDEP_Mechanical
-LIBS:HDEP_Modules
-LIBS:HDEP_Power
-LIBS:HDEP_Regulators
-LIBS:HDEP_Resistors
-LIBS:HDEP_Switches
-LIBS:HDEP_Transceivers
-LIBS:HDEP_TVS
-LIBS:HDEP_Varistors
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "NI-HM MCU - Controller"
 Date ""
 Rev "0"
@@ -30,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +3.3V #PWR5
+L HDEP_Mechanical:+3.3V #PWR5
 U 1 1 56625A51
 P 4675 3975
 F 0 "#PWR5" H 4675 3825 50  0001 C CNN
@@ -41,7 +25,7 @@ F 3 "" H 4675 3975 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR6
+L HDEP_Mechanical:GND #PWR6
 U 1 1 56625B5D
 P 4675 4700
 F 0 "#PWR6" H 4675 4450 50  0001 C CNN
@@ -54,7 +38,7 @@ $EndComp
 Text Notes 1475 9750 0    43   ~ 9
 CStray 3pF\nCx = Out calculated load Capacitance\nCL = Crystal manufacture load capacitance \nCL = (Cx/2)+CStray\nCx = (CL - CStray) * 2
 $Comp
-L GND #PWR1
+L HDEP_Mechanical:GND #PWR1
 U 1 1 56626291
 P 1275 9500
 F 0 "#PWR1" H 1275 9250 50  0001 C CNN
@@ -65,7 +49,7 @@ F 3 "" H 1275 9500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L HDEP_Mechanical:GND #PWR4
 U 1 1 566262AF
 P 3025 9500
 F 0 "#PWR4" H 3025 9250 50  0001 C CNN
@@ -84,7 +68,7 @@ Micro_EXTAL
 Text Label 5225 4550 0    43   ~ 0
 Micro_XTAL
 $Comp
-L +3.3V #PWR10
+L HDEP_Mechanical:+3.3V #PWR10
 U 1 1 566294BB
 P 11200 5600
 F 0 "#PWR10" H 11200 5450 50  0001 C CNN
@@ -95,7 +79,7 @@ F 3 "" H 11200 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR11
+L HDEP_Mechanical:GND #PWR11
 U 1 1 5662952F
 P 11200 5950
 F 0 "#PWR11" H 11200 5700 50  0001 C CNN
@@ -106,7 +90,7 @@ F 3 "" H 11200 5950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR7
+L HDEP_Mechanical:+3.3V #PWR7
 U 1 1 5662A315
 P 6150 1150
 F 0 "#PWR7" H 6150 1000 50  0001 C CNN
@@ -117,7 +101,7 @@ F 3 "" H 6150 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR9
+L HDEP_Mechanical:GND #PWR9
 U 1 1 5662A798
 P 9875 2100
 F 0 "#PWR9" H 9875 1850 50  0001 C CNN
@@ -130,7 +114,7 @@ $EndComp
 Text Notes 7225 1125 0    43   ~ 9
 These capacitor should be placed as close as possible to the CPU VDD  Pins.\nNote: There should be one 100nF per VDD/AVDD power input to the microcontroller.
 $Comp
-L DEBUG_ARM_SW J1
+L HDEP_Mechanical:DEBUG_ARM_SW J1
 U 1 1 5662BD8F
 P 15300 1300
 F 0 "J1" H 15325 1350 60  0000 C CNN
@@ -145,7 +129,7 @@ F 7 "2308450" H 15300 2050 60  0001 C CNN "Supplier No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR14
+L HDEP_Mechanical:+3.3V #PWR14
 U 1 1 5662C1A0
 P 14950 1225
 F 0 "#PWR14" H 14950 1075 50  0001 C CNN
@@ -156,7 +140,7 @@ F 3 "" H 14950 1225 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR13
+L HDEP_Mechanical:GND #PWR13
 U 1 1 5662C3B6
 P 14850 1875
 F 0 "#PWR13" H 14850 1625 50  0001 C CNN
@@ -173,7 +157,7 @@ Micro_SWDIO
 Text Label 14500 1600 0    43   ~ 0
 Micro_SWCLK
 $Comp
-L GND #PWR12
+L HDEP_Mechanical:GND #PWR12
 U 1 1 5662CBA7
 P 14300 2200
 F 0 "#PWR12" H 14300 1950 50  0001 C CNN
@@ -192,7 +176,7 @@ Micro_SWCLK
 Text Label 1550 2700 0    43   ~ 0
 Micro_~RESET~
 $Comp
-L +3.3V #PWR2
+L HDEP_Mechanical:+3.3V #PWR2
 U 1 1 5662FABF
 P 1925 2500
 F 0 "#PWR2" H 1925 2350 50  0001 C CNN
@@ -203,7 +187,7 @@ F 3 "" H 1925 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L HDEP_Mechanical:GND #PWR3
 U 1 1 5662FDF3
 P 1925 2950
 F 0 "#PWR3" H 1925 2700 50  0001 C CNN
@@ -220,7 +204,7 @@ Micro_RTCO
 Text Label 10500 3750 0    43   ~ 0
 Micro_RTCO
 $Comp
-L S9KEAZ64ACLH U1
+L HDEP_IC:S9KEAZ64ACLH U1
 U 1 1 5662EA65
 P 5950 3350
 F 0 "U1" H 6000 3400 60  0000 C CNN
@@ -241,7 +225,7 @@ Use 200K for low Frequency High Gain. Else use 0R
 Text Label 10925 4950 2    43   ~ 0
 Micro_LED1
 $Comp
-L GND #PWR8
+L HDEP_Mechanical:GND #PWR8
 U 1 1 56689859
 P 9150 7800
 F 0 "#PWR8" H 9150 7550 50  0001 C CNN
@@ -254,7 +238,7 @@ $EndComp
 Text Label 6950 7600 0    43   ~ 0
 Micro_LED1
 $Comp
-L C0805C106K8PACTU C6
+L HDEP_Capacitor:C0805C106K8PACTU C6
 U 1 1 566772F1
 P 9875 1600
 F 0 "C6" V 9775 1400 60  0000 C CNN
@@ -276,11 +260,11 @@ Wire Wire Line
 Wire Wire Line
 	1275 7800 1875 7800
 Wire Wire Line
-	1275 7800 1275 8850
+	1275 7800 1275 8450
 Wire Wire Line
 	3025 8450 2350 8450
 Wire Wire Line
-	3025 7550 3025 8850
+	3025 7550 3025 7800
 Wire Wire Line
 	3025 9500 3025 9300
 Wire Wire Line
@@ -290,24 +274,24 @@ Wire Wire Line
 Wire Wire Line
 	5750 4550 5225 4550
 Wire Wire Line
-	4675 4250 4675 4700
+	4675 4250 4675 4350
 Wire Wire Line
 	5750 4250 4675 4250
 Connection ~ 4675 4350
 Wire Wire Line
 	5750 4050 4675 4050
 Wire Wire Line
-	4675 3975 4675 4150
+	4675 3975 4675 4050
 Wire Wire Line
 	11200 5750 11200 5600
 Wire Wire Line
 	11200 5850 11200 5950
 Wire Wire Line
-	6150 1150 6150 1375
+	6150 1150 6150 1225
 Wire Wire Line
 	7450 1375 7450 1225
 Wire Wire Line
-	6150 1225 9875 1225
+	6150 1225 7450 1225
 Connection ~ 6150 1225
 Wire Wire Line
 	9050 1225 9050 1350
@@ -315,9 +299,9 @@ Connection ~ 7450 1225
 Wire Wire Line
 	6150 1825 6150 2000
 Wire Wire Line
-	6150 2000 9875 2000
+	6150 2000 7450 2000
 Wire Wire Line
-	9875 1825 9875 2100
+	9875 1825 9875 2000
 Connection ~ 9050 2000
 Wire Wire Line
 	7450 1825 7450 2000
@@ -375,8 +359,6 @@ Connection ~ 3025 8450
 Wire Notes Line
 	2900 7175 1700 6925
 Wire Notes Line
-	1700 6925 1700 6925
-Wire Notes Line
 	2950 7450 2300 7575
 Wire Notes Line
 	2300 7575 2150 7700
@@ -410,7 +392,7 @@ Wire Wire Line
 	9050 2000 9050 1800
 Connection ~ 9875 2000
 $Comp
-L ABM7-12.000MHZ-D2Y-T X1
+L HDEP_Crystals:ABM7-12.000MHZ-D2Y-T X1
 U 1 1 56679F39
 P 2100 8450
 F 0 "X1" H 2100 8625 60  0000 C CNN
@@ -440,7 +422,7 @@ Micro_UART_TX
 Text GLabel 10625 4650 2    35   Input ~ 0
 Micro_UART_RX
 $Comp
-L C0402C104K4RACAUTO C3
+L HDEP_Capacitor:C0402C104K4RACAUTO C3
 U 1 1 566882CC
 P 6150 1600
 F 0 "C3" V 6050 1475 60  0000 C CNN
@@ -456,7 +438,7 @@ F 8 "100nF 16V 10%" V 6350 1175 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L C0402C104K4RACAUTO C4
+L HDEP_Capacitor:C0402C104K4RACAUTO C4
 U 1 1 5668860F
 P 7450 1600
 F 0 "C4" V 7350 1475 60  0000 C CNN
@@ -472,7 +454,7 @@ F 8 "100nF 16V 10%" V 7650 1200 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L C0402C104K4RACAUTO C5
+L HDEP_Capacitor:C0402C104K4RACAUTO C5
 U 1 1 5668866C
 P 9050 1575
 F 0 "C5" V 8950 1425 60  0000 C CNN
@@ -488,7 +470,7 @@ F 8 "100nF 16V 10%" V 9250 1100 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L ERJ2RKF2003X R2
+L HDEP_Resistors:ERJ2RKF2003X R2
 U 1 1 56693C4A
 P 3025 7325
 F 0 "R2" V 3025 7425 60  0000 C CNN
@@ -504,7 +486,7 @@ F 8 "200K 0.1W 1% 75V" V 2975 6825 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L MCMR04X1004FTL R1
+L HDEP_Resistors:MCMR04X1004FTL R1
 U 1 1 56694F0D
 P 2100 7800
 F 0 "R1" H 2050 7875 60  0000 C CNN
@@ -520,7 +502,7 @@ F 8 "1M 62.5mW 1%" H 2100 7650 60  0000 C CNN "C_Value"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MC0402N300J500CT C1
+L HDEP_Capacitor:MC0402N300J500CT C1
 U 1 1 56697CBA
 P 1275 9075
 F 0 "C1" V 1200 8900 60  0000 C CNN
@@ -536,7 +518,7 @@ F 8 "30pF 50V 5%" V 1475 9425 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L MC0402N300J500CT C2
+L HDEP_Capacitor:MC0402N300J500CT C2
 U 1 1 56697D66
 P 3025 9075
 F 0 "C2" V 2925 8900 60  0000 C CNN
@@ -552,7 +534,7 @@ F 8 "30pF 50V 5%" V 3200 9450 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L ERJ2RKF1001X R3
+L HDEP_Resistors:ERJ2RKF1001X R3
 U 1 1 5669AE50
 P 8625 7600
 F 0 "R3" H 8575 7675 60  0000 C CNN
@@ -568,7 +550,7 @@ F 8 "1K 0.1W 1%" H 8625 7500 60  0000 C CNN "C_Value"
 	1    0    0    -1  
 $EndComp
 $Comp
-L KP-1608SURCK D1
+L HDEP_Diodes:KP-1608SURCK D1
 U 1 1 566A3006
 P 7875 7600
 F 0 "D1" H 7875 7775 60  0000 C CNN
@@ -584,7 +566,7 @@ F 8 "Red" H 7875 7450 60  0000 C CNN "C_Value"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_PAD T1
+L HDEP_Mechanical:TEST_PAD T1
 U 1 1 5669F6A0
 P 2275 2525
 F 0 "T1" H 2375 2450 60  0000 C CNN
@@ -596,7 +578,7 @@ F 4 "0.5mm Test pad" H 2275 2925 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_PAD T2
+L HDEP_Mechanical:TEST_PAD T2
 U 1 1 5669F7D9
 P 2275 2625
 F 0 "T2" H 2375 2550 60  0000 C CNN
@@ -608,7 +590,7 @@ F 4 "0.5mm Test pad" H 2275 3025 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_PAD T3
+L HDEP_Mechanical:TEST_PAD T3
 U 1 1 5669F825
 P 2275 2725
 F 0 "T3" H 2375 2650 60  0000 C CNN
@@ -620,7 +602,7 @@ F 4 "0.5mm Test pad" H 2275 3125 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_PAD T4
+L HDEP_Mechanical:TEST_PAD T4
 U 1 1 5669F870
 P 2275 2825
 F 0 "T4" H 2375 2750 60  0000 C CNN
@@ -659,7 +641,7 @@ Wire Wire Line
 NoConn ~ 10400 4850
 NoConn ~ 10400 6450
 $Comp
-L CRCW0402100KFKEDHP R4
+L HDEP_Resistors:CRCW0402100KFKEDHP R4
 U 1 1 566DA00D
 P 14300 1875
 F 0 "R4" V 14300 2000 60  0000 C CNN
@@ -700,4 +682,26 @@ NoConn ~ 5750 5050
 NoConn ~ 5750 4950
 NoConn ~ 5750 4850
 NoConn ~ 10400 5050
+Wire Wire Line
+	4675 4350 4675 4700
+Wire Wire Line
+	6150 1225 6150 1375
+Wire Wire Line
+	7450 1225 9050 1225
+Wire Wire Line
+	9050 2000 9875 2000
+Wire Wire Line
+	7450 2000 9050 2000
+Wire Wire Line
+	1275 8450 1275 8850
+Wire Wire Line
+	3025 8450 3025 8850
+Wire Wire Line
+	4675 4050 4675 4150
+Wire Wire Line
+	9050 1225 9875 1225
+Wire Wire Line
+	9875 2000 9875 2100
+Wire Wire Line
+	3025 7800 3025 8450
 $EndSCHEMATC

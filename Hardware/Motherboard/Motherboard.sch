@@ -1,26 +1,9 @@
-EESchema Schematic File Version 2
-LIBS:HDEP_Capacitor
-LIBS:HDEP_Connectors
-LIBS:HDEP_Crystals
-LIBS:HDEP_Diodes
-LIBS:HDEP_Fuses
-LIBS:HDEP_IC
-LIBS:HDEP_Inductors
-LIBS:HDEP_Mechanical
-LIBS:HDEP_Modules
-LIBS:HDEP_Mosfet
-LIBS:HDEP_Power
-LIBS:HDEP_Regulators
-LIBS:HDEP_Resistors
-LIBS:HDEP_Switches
-LIBS:HDEP_Transceivers
-LIBS:HDEP_TVS
-LIBS:HDEP_Varistors
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -31,9 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2900 1275 2325 1875
+S 2150 800  2325 1875
 U 56625744
 F0 "Controller" 60
 F1 "Controller.sch" 60
+$EndSheet
+$Sheet
+S 5000 800  1400 1850
+U 5AF7E402
+F0 "Soft power switch" 50
+F1 "Soft_power_sw.sch" 50
 $EndSheet
 $EndSCHEMATC
