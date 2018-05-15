@@ -44,7 +44,7 @@ F 5 "9846379" H 4460 3210 60  0001 C CNN "Supplier No."
 F 6 "ON Semiconductor" H 4440 2980 60  0001 C CNN "Manufacture"
 F 7 "P Channel, 1 A, -20 V, 410 mohm, -4.5 V, -600 mV" H 4450 2890 60  0001 C CNN "C_Value"
 	1    4450 2200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L NDS332P T3
@@ -59,7 +59,7 @@ F 5 "9846379" H 7360 3210 60  0001 C CNN "Supplier No."
 F 6 "ON Semiconductor" H 7340 2980 60  0001 C CNN "Manufacture"
 F 7 "P Channel, 1 A, -20 V, 410 mohm, -4.5 V, -600 mV" H 7350 2890 60  0001 C CNN "C_Value"
 	1    7350 2200
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L PMF370XN,115 T2
@@ -124,14 +124,6 @@ F 3 "" H 4550 4000 60  0000 C CNN
 	1    4550 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 2500 4550 3100
-Wire Wire Line
-	4550 3700 4550 4000
-Wire Wire Line
-	7250 3700 7250 4000
-Wire Wire Line
-	7250 2500 7250 3100
 Text Label 5250 2850 2    60   ~ 0
 Motor_A
 Text Label 6700 2850 0    60   ~ 0
@@ -147,23 +139,11 @@ F 3 "" H 7250 1600 60  0000 C CNN
 	1    7250 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 1600 4550 1900
-Wire Wire Line
-	7250 1600 7250 1900
-Wire Wire Line
-	7550 2300 7950 2300
-Wire Wire Line
-	7550 3500 7950 3500
-Wire Wire Line
-	4250 3500 3850 3500
-Wire Wire Line
-	4250 2300 3800 2300
-Text Label 3800 2300 0    60   ~ 0
+Text Label 3800 2100 0    60   ~ 0
 Input_1
 Text Label 3850 3500 0    60   ~ 0
 Input_1
-Text Label 7950 2300 2    60   ~ 0
+Text Label 7950 2100 2    60   ~ 0
 Input_2
 Text Label 7950 3500 2    60   ~ 0
 Input_2
@@ -225,10 +205,6 @@ F 3 "" H 2300 1000 60  0000 C CNN
 	1    2300 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 1075 2300 1000
-Wire Wire Line
-	1725 1075 1725 1000
 $Comp
 L GND #PWR09
 U 1 1 59CD3639
@@ -251,10 +227,6 @@ F 3 "" H 2300 1600 60  0000 C CNN
 	1    2300 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1725 1525 1725 1600
-Wire Wire Line
-	2300 1525 2300 1600
 Text Notes 4750 1025 0    197  ~ 0
 Mosfet H-Bridge
 Text Notes 750  3050 0    60   ~ 0
@@ -344,12 +316,6 @@ F 3 "" H 1950 3000 60  0000 C CNN
 	1    1950 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 2700 1950 3000
-Wire Wire Line
-	1700 2600 2000 2600
-Wire Wire Line
-	2000 2600 2000 2500
 $Comp
 L +3.3V #PWR06
 U 1 1 59D2666E
@@ -361,6 +327,88 @@ F 3 "" H 2000 2500 60  0000 C CNN
 	1    2000 2500
 	1    0    0    -1  
 $EndComp
+$Comp
+L PMEG1201AESF D3
+U 1 1 59F1ADCC
+P 8350 2150
+F 0 "D3" V 8456 2022 60  0000 R CNN
+F 1 "PMEG1201AESF" V 8350 2022 60  0000 R CNN
+F 2 "HDEP_Diodes:SOD962-2" H 8350 3150 60  0001 C CNN
+F 3 "" H 8070 1675 60  0001 C CNN
+F 4 "Rectifier Diode, Single, 12 V,0. 1 A, SOD-962, 2, 250 mV" H 8350 2550 60  0001 C CNN "Description"
+F 5 "NXP" H 8350 2650 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 8350 3000 60  0001 C CNN "Supplier"
+F 7 "2498549" H 8350 2900 60  0001 C CNN "Supplier No."
+F 8 "0.25Vf 0.1A 12V" V 8244 2022 60  0000 R CNN "C_Value"
+	1    8350 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PMEG1201AESF D4
+U 1 1 59F1AF99
+P 8350 3450
+F 0 "D4" V 8456 3322 60  0000 R CNN
+F 1 "PMEG1201AESF" V 8350 3322 60  0000 R CNN
+F 2 "HDEP_Diodes:SOD962-2" H 8350 4450 60  0001 C CNN
+F 3 "" H 8070 2975 60  0001 C CNN
+F 4 "Rectifier Diode, Single, 12 V,0. 1 A, SOD-962, 2, 250 mV" H 8350 3850 60  0001 C CNN "Description"
+F 5 "NXP" H 8350 3950 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 8350 4300 60  0001 C CNN "Supplier"
+F 7 "2498549" H 8350 4200 60  0001 C CNN "Supplier No."
+F 8 "0.25Vf 0.1A 12V" V 8244 3322 60  0000 R CNN "C_Value"
+	1    8350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PMEG1201AESF D1
+U 1 1 59F1B3C6
+P 3500 2200
+F 0 "D1" V 3600 2450 60  0000 R CNN
+F 1 "PMEG1201AESF" V 3500 3050 60  0000 R CNN
+F 2 "HDEP_Diodes:SOD962-2" H 3500 3200 60  0001 C CNN
+F 3 "" H 3220 1725 60  0001 C CNN
+F 4 "Rectifier Diode, Single, 12 V,0. 1 A, SOD-962, 2, 250 mV" H 3500 2600 60  0001 C CNN "Description"
+F 5 "NXP" H 3500 2700 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 3500 3050 60  0001 C CNN "Supplier"
+F 7 "2498549" H 3500 2950 60  0001 C CNN "Supplier No."
+F 8 "0.25Vf 0.1A 12V" V 3400 3100 60  0000 R CNN "C_Value"
+	1    3500 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 2500 4550 3100
+Wire Wire Line
+	4550 3700 4550 4000
+Wire Wire Line
+	7250 3700 7250 4000
+Wire Wire Line
+	7250 2500 7250 3100
+Wire Wire Line
+	4550 1600 4550 1900
+Wire Wire Line
+	7250 1600 7250 1900
+Wire Wire Line
+	7550 2100 7950 2100
+Wire Wire Line
+	7550 3500 7950 3500
+Wire Wire Line
+	4250 3500 3850 3500
+Wire Wire Line
+	4250 2100 3800 2100
+Wire Wire Line
+	2300 1075 2300 1000
+Wire Wire Line
+	1725 1075 1725 1000
+Wire Wire Line
+	1725 1525 1725 1600
+Wire Wire Line
+	2300 1525 2300 1600
+Wire Wire Line
+	1950 2700 1950 3000
+Wire Wire Line
+	1700 2600 2000 2600
+Wire Wire Line
+	2000 2600 2000 2500
 Wire Wire Line
 	1700 2800 2000 2800
 Wire Wire Line
@@ -373,4 +421,60 @@ Wire Wire Line
 	1700 2700 1950 2700
 Wire Wire Line
 	1700 2900 2000 2900
+Wire Wire Line
+	8350 2400 8350 2550
+Wire Wire Line
+	8350 2550 7250 2550
+Connection ~ 7250 2550
+Wire Wire Line
+	8350 1900 8350 1750
+Wire Wire Line
+	8350 1750 7250 1750
+Connection ~ 7250 1750
+Wire Wire Line
+	8350 3200 8350 3050
+Wire Wire Line
+	8350 3050 7250 3050
+Connection ~ 7250 3050
+Wire Wire Line
+	8350 3700 8350 3800
+Wire Wire Line
+	8350 3800 7250 3800
+Connection ~ 7250 3800
+Wire Wire Line
+	3500 1950 3500 1800
+Wire Wire Line
+	3500 1800 4550 1800
+Connection ~ 4550 1800
+Wire Wire Line
+	3500 2450 3500 2600
+Wire Wire Line
+	3500 2600 4550 2600
+Connection ~ 4550 2600
+$Comp
+L PMEG1201AESF D2
+U 1 1 59F1BAA5
+P 3500 3500
+F 0 "D2" V 3600 3750 60  0000 R CNN
+F 1 "PMEG1201AESF" V 3500 4350 60  0000 R CNN
+F 2 "HDEP_Diodes:SOD962-2" H 3500 4500 60  0001 C CNN
+F 3 "" H 3220 3025 60  0001 C CNN
+F 4 "Rectifier Diode, Single, 12 V,0. 1 A, SOD-962, 2, 250 mV" H 3500 3900 60  0001 C CNN "Description"
+F 5 "NXP" H 3500 4000 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 3500 4350 60  0001 C CNN "Supplier"
+F 7 "2498549" H 3500 4250 60  0001 C CNN "Supplier No."
+F 8 "0.25Vf 0.1A 12V" V 3400 4400 60  0000 R CNN "C_Value"
+	1    3500 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 3050 3500 3250
+Wire Wire Line
+	3500 3050 4550 3050
+Connection ~ 4550 3050
+Wire Wire Line
+	3500 3750 3500 3850
+Wire Wire Line
+	3500 3850 4550 3850
+Connection ~ 4550 3850
 $EndSCHEMATC
