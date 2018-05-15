@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+LIBS:Motherboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HDEP_Regulators:MT3608 U?
+U 1 1 5AFA2A0B
+P 2500 1550
+F 0 "U?" H 2800 1737 60  0000 C CNN
+F 1 "MT3608" H 2800 1631 60  0000 C CNN
+F 2 "HDEP_IC:SOT-23-6" H 2500 2550 60  0001 C CNN
+F 3 "" H 2220 1075 60  0001 C CNN
+F 4 "High Efficiency 1.2MHz 2A 2v to 24vStep Up Converter " H 2500 1950 60  0001 C CNN "Description"
+F 5 "AEROSEMI" H 2500 2050 60  0001 C CNN "Manufacture"
+F 6 "aliexpress" H 2500 2400 60  0001 C CNN "Supplier"
+F 7 "MT3608" H 2500 2300 60  0001 C CNN "Supplier No."
+	1    2500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L HDEP_Resistors:MCWR04X1102FTL R?
+U 1 1 5AFA311C
+P 4650 2175
+F 0 "R?" V 4544 2228 60  0000 L CNN
+F 1 "MCWR04X1102FTL" V 4650 2228 60  0000 L CNN
+F 2 "HDEP_Resistors:RES_0402" H 4650 3175 60  0001 C CNN
+F 3 "" H 4370 1700 60  0001 C CNN
+F 4 "11K, 0402, 1%, 63mW, 50V" H 4650 2575 60  0001 C CNN "Description"
+F 5 "MULTICOMP" H 4650 2675 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 4650 3025 60  0001 C CNN "Supplier"
+F 7 "2447100" H 4650 2925 60  0001 C CNN "Supplier No."
+F 8 "11K 63mmW 1%" V 4756 2228 60  0000 L CNN "C_Value"
+	1    4650 2175
+	0    1    1    0   
+$EndComp
+$Comp
+L HDEP_Resistors:MCMR04X1501FTL R?
+U 1 1 5AFA3AA2
+P 4650 2775
+F 0 "R?" V 4544 2828 60  0000 L CNN
+F 1 "MCMR04X1501FTL" V 4650 2828 60  0000 L CNN
+F 2 "HDEP_Resistors:RES_0402" H 4650 3775 60  0001 C CNN
+F 3 "" H 4370 2300 60  0001 C CNN
+F 4 "1.5K, 0402, 1%, 63mW, 50V" H 4650 3175 60  0001 C CNN "Description"
+F 5 "MULTICOMP" H 4650 3275 60  0001 C CNN "Manufacture"
+F 6 "Farnell" H 4650 3625 60  0001 C CNN "Supplier"
+F 7 "2072645" H 4650 3525 60  0001 C CNN "Supplier No."
+F 8 "11K 63mmW 1%" V 4756 2828 60  0000 L CNN "C_Value"
+	1    4650 2775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 2400 4650 2500
+$Comp
+L HDEP_Mechanical:GND #PWR?
+U 1 1 5AFA3C42
+P 4650 3150
+F 0 "#PWR?" H 4650 2900 50  0001 C CNN
+F 1 "GND" H 4655 2977 50  0000 C CNN
+F 2 "HDEP_" H 4650 3150 60  0001 C CNN
+F 3 "" H 4650 3150 60  0000 C CNN
+	1    4650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3150 4650 3000
+$Comp
+L HDEP_Mechanical:+5V #PWR?
+U 1 1 5AFA3CDA
+P 4650 1800
+F 0 "#PWR?" H 4650 1650 50  0001 C CNN
+F 1 "+5V" H 4655 2079 50  0000 C CNN
+F 2 "HDEP_" H 4655 1980 60  0000 C CNN
+F 3 "" H 4650 1800 60  0000 C CNN
+	1    4650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1800 4650 1950
+$Comp
+L HDEP_Mechanical:GND #PWR?
+U 1 1 5AFA3E10
+P 1950 2200
+F 0 "#PWR?" H 1950 1950 50  0001 C CNN
+F 1 "GND" H 1955 2027 50  0000 C CNN
+F 2 "HDEP_" H 1950 2200 60  0001 C CNN
+F 3 "" H 1950 2200 60  0000 C CNN
+	1    1950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1750 1950 1750
+Wire Wire Line
+	1950 1750 1950 2200
+$Comp
+L HDEP_Mechanical:VBat_Reg #PWR?
+U 1 1 5AFA47CB
+P 1750 1500
+F 0 "#PWR?" H 1750 1350 50  0001 C CNN
+F 1 "VBat_Reg" H 1755 1779 50  0000 C CNN
+F 2 "HDEP_" H 1755 1680 60  0000 C CNN
+F 3 "" H 1750 1500 60  0000 C CNN
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1650 2050 1650
+Wire Wire Line
+	1750 1650 1750 1500
+Wire Wire Line
+	3300 1850 3450 1850
+Wire Wire Line
+	3450 1850 3450 2050
+Wire Wire Line
+	3450 2050 2050 2050
+Wire Wire Line
+	2050 2050 2050 1650
+Connection ~ 2050 1650
+Wire Wire Line
+	2050 1650 1750 1650
+Wire Wire Line
+	2300 1850 2250 1850
+Wire Wire Line
+	2250 1850 2250 2500
+Wire Wire Line
+	2250 2500 4650 2500
+Connection ~ 4650 2500
+Wire Wire Line
+	4650 2500 4650 2550
+$EndSCHEMATC

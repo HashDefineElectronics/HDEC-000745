@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:Motherboard-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -43,19 +44,8 @@ Wire Wire Line
 	1350 1100 1350 1350
 Wire Wire Line
 	1350 1350 2050 1350
-$Comp
-L HDEP_Mechanical:+5V #PWR?
-U 1 1 5AF7E5F9
-P 3350 1100
-F 0 "#PWR?" H 3350 950 50  0001 C CNN
-F 1 "+5V" H 3355 1379 50  0000 C CNN
-F 2 "HDEP_" H 3355 1280 60  0000 C CNN
-F 3 "" H 3350 1100 60  0000 C CNN
-	1    3350 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3350 1100 3350 1350
+	3350 1000 3350 1350
 Wire Wire Line
 	3350 1350 3100 1350
 $Comp
@@ -243,4 +233,15 @@ Text Label 3050 4000 0    50   ~ 0
 MCU_Power_Switch
 Text Notes 3750 1300 0    50   ~ 0
 Firmware Note: Turn on/Off device will require the user to hold the MCU_Power Switch for 2 Seconds. This will ensure their intension.\n\n1.  On power up, Keep MCU_Power_En low untill 2Sec.\n2. Power down: Keep MCU_Power_En Hight for 2Sec before setting it low. 
+$Comp
+L HDEP_Mechanical:VBat_Reg #PWR?
+U 1 1 5AFA4174
+P 3350 1000
+F 0 "#PWR?" H 3350 850 50  0001 C CNN
+F 1 "VBat_Reg" H 3355 1279 50  0000 C CNN
+F 2 "HDEP_" H 3355 1180 60  0000 C CNN
+F 3 "" H 3350 1000 60  0000 C CNN
+	1    3350 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
