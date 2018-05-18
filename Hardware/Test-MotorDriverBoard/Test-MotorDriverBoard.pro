@@ -1,4 +1,4 @@
-update=Wed 27 Sep 2017 21:07:48 BST
+update=Tue 15 May 2018 09:54:24 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,26 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=../HDE_PUB_LIB/Library
-[eeschema/libraries]
-LibName1=HDEP_Capacitor
-LibName2=HDEP_Connectors
-LibName3=HDEP_Crystals
-LibName4=HDEP_Diodes
-LibName5=HDEP_Fuses
-LibName6=HDEP_IC
-LibName7=HDEP_Inductors
-LibName8=HDEP_Mechanical
-LibName9=HDEP_Modules
-LibName10=HDEP_Mosfet
-LibName11=HDEP_Power
-LibName12=HDEP_Regulators
-LibName13=HDEP_Resistors
-LibName14=HDEP_Switches
-LibName15=HDEP_Transceivers
-LibName16=HDEP_TVS
-LibName17=HDEP_Varistors
 [general]
 version=1
+[eeschema]
+version=1
+LibDir=

@@ -6,6 +6,7 @@
 *.bck
 *.kicad_pcb-bak
 *~
+*rescue-backup
 _autosave-*
 *.tmp
 *-cache.lib

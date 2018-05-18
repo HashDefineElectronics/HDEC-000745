@@ -1,21 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:HDEP_Capacitor
-LIBS:HDEP_Connectors
-LIBS:HDEP_Crystals
-LIBS:HDEP_Diodes
-LIBS:HDEP_Fuses
-LIBS:HDEP_IC
-LIBS:HDEP_Inductors
-LIBS:HDEP_Mechanical
-LIBS:HDEP_Modules
-LIBS:HDEP_Mosfet
-LIBS:HDEP_Power
-LIBS:HDEP_Regulators
-LIBS:HDEP_Resistors
-LIBS:HDEP_Switches
-LIBS:HDEP_Transceivers
-LIBS:HDEP_TVS
-LIBS:HDEP_Varistors
+EESchema Schematic File Version 4
 LIBS:Test-MotorDriverBoard-cache
 EELAYER 26 0
 EELAYER END
@@ -32,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L NDS332P T1
+L HDEP_Mosfet:NDS332P T1
 U 1 1 59CD02C0
 P 4450 2200
 F 0 "T1" H 4320 2390 60  0000 C CNN
@@ -47,7 +30,7 @@ F 7 "P Channel, 1 A, -20 V, 410 mohm, -4.5 V, -600 mV" H 4450 2890 60  0001 C CN
 	1    0    0    1   
 $EndComp
 $Comp
-L NDS332P T3
+L HDEP_Mosfet:NDS332P T3
 U 1 1 59CD0333
 P 7350 2200
 F 0 "T3" H 7220 2390 60  0000 C CNN
@@ -62,7 +45,7 @@ F 7 "P Channel, 1 A, -20 V, 410 mohm, -4.5 V, -600 mV" H 7350 2890 60  0001 C CN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PMF370XN,115 T2
+L HDEP_Mosfet:PMF370XN,115 T2
 U 1 1 59CD039E
 P 4450 3400
 F 0 "T2" H 4320 3590 60  0000 C CNN
@@ -77,7 +60,7 @@ F 7 "N Channel, 870 mA, 30 V, 0.37 ohm, 4.5 V, 1 V" H 4450 4090 60  0001 C CNN "
 	1    0    0    -1  
 $EndComp
 $Comp
-L PMF370XN,115 T4
+L HDEP_Mosfet:PMF370XN,115 T4
 U 1 1 59CD0447
 P 7350 3400
 F 0 "T4" H 7220 3590 60  0000 C CNN
@@ -92,7 +75,7 @@ F 7 "N Channel, 870 mA, 30 V, 0.37 ohm, 4.5 V, 1 V" H 7350 4090 60  0001 C CNN "
 	-1   0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR01
+L HDEP_Mechanical:+3.3V #PWR01
 U 1 1 59CD0814
 P 4550 1600
 F 0 "#PWR01" H 4550 1450 50  0001 C CNN
@@ -103,7 +86,7 @@ F 3 "" H 4550 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L HDEP_Mechanical:GND #PWR02
 U 1 1 59CD08A4
 P 7250 4000
 F 0 "#PWR02" H 7250 3750 50  0001 C CNN
@@ -114,7 +97,7 @@ F 3 "" H 7250 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L HDEP_Mechanical:GND #PWR03
 U 1 1 59CD08C4
 P 4550 4000
 F 0 "#PWR03" H 4550 3750 50  0001 C CNN
@@ -129,7 +112,7 @@ Motor_A
 Text Label 6700 2850 0    60   ~ 0
 Motor_B
 $Comp
-L +3.3V #PWR04
+L HDEP_Mechanical:+3.3V #PWR04
 U 1 1 59CD12AB
 P 7250 1600
 F 0 "#PWR04" H 7250 1450 50  0001 C CNN
@@ -152,7 +135,7 @@ Input_1
 Text Label 2000 2900 0    50   ~ 0
 Input_2
 $Comp
-L C1210C106K5RACTU C1
+L HDEP_Capacitor:C1210C106K5RACTU C1
 U 1 1 59CD305A
 P 1725 1300
 F 0 "C1" H 1725 1450 60  0000 C CNN
@@ -168,7 +151,7 @@ F 8 "10uF 50V 10%" H 1725 1125 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L MC0805B104K500CT C2
+L HDEP_Capacitor:MC0805B104K500CT C2
 U 1 1 59CD3290
 P 2300 1300
 F 0 "C2" H 2300 1450 60  0000 C CNN
@@ -184,7 +167,7 @@ F 8 "0.1uF 50V 10%" H 2300 1125 60  0000 C CNN "C_Value"
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR07
+L HDEP_Mechanical:+3.3V #PWR07
 U 1 1 59CD347C
 P 1725 1000
 F 0 "#PWR07" H 1725 850 50  0001 C CNN
@@ -195,7 +178,7 @@ F 3 "" H 1725 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR08
+L HDEP_Mechanical:+3.3V #PWR08
 U 1 1 59CD349F
 P 2300 1000
 F 0 "#PWR08" H 2300 850 50  0001 C CNN
@@ -206,7 +189,7 @@ F 3 "" H 2300 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L HDEP_Mechanical:GND #PWR09
 U 1 1 59CD3639
 P 1725 1600
 F 0 "#PWR09" H 1725 1350 50  0001 C CNN
@@ -217,7 +200,7 @@ F 3 "" H 1725 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L HDEP_Mechanical:GND #PWR010
 U 1 1 59CD36CC
 P 2300 1600
 F 0 "#PWR010" H 2300 1350 50  0001 C CNN
@@ -234,7 +217,7 @@ Imax = 500mA @ 3.3v
 Text Notes 1350 725  0    100  ~ 0
 Bulk Capacitors
 $Comp
-L TEST_PAD Ts5
+L HDEP_Mechanical:TEST_PAD Ts5
 U 1 1 59CD2294
 P 1700 2600
 F 0 "Ts5" H 1950 2600 60  0000 C CNN
@@ -246,7 +229,7 @@ F 4 "0.5mm Test pad" H 1700 3000 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_PAD Ts6
+L HDEP_Mechanical:TEST_PAD Ts6
 U 1 1 59CD2821
 P 1700 2700
 F 0 "Ts6" H 1950 2700 60  0000 C CNN
@@ -258,7 +241,7 @@ F 4 "0.5mm Test pad" H 1700 3100 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_PAD Ts7
+L HDEP_Mechanical:TEST_PAD Ts7
 U 1 1 59CD287C
 P 1700 2800
 F 0 "Ts7" H 1950 2800 60  0000 C CNN
@@ -270,7 +253,7 @@ F 4 "0.5mm Test pad" H 1700 3200 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_PAD Ts8
+L HDEP_Mechanical:TEST_PAD Ts8
 U 1 1 59CD28D4
 P 1700 2900
 F 0 "Ts8" H 1950 2900 60  0000 C CNN
@@ -282,7 +265,7 @@ F 4 "0.5mm Test pad" H 1700 3300 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_PAD Ts9
+L HDEP_Mechanical:TEST_PAD Ts9
 U 1 1 59CD3135
 P 5300 2850
 F 0 "Ts9" H 5500 2850 60  0000 C CNN
@@ -294,7 +277,7 @@ F 4 "0.5mm Test pad" H 5300 3250 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_PAD Ts10
+L HDEP_Mechanical:TEST_PAD Ts10
 U 1 1 59CD3315
 P 6650 2850
 F 0 "Ts10" H 6900 2825 60  0000 C CNN
@@ -306,7 +289,7 @@ F 4 "0.5mm Test pad" H 6650 3250 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR05
+L HDEP_Mechanical:GND #PWR05
 U 1 1 59D265B8
 P 1950 3000
 F 0 "#PWR05" H 1950 2750 50  0001 C CNN
@@ -317,7 +300,7 @@ F 3 "" H 1950 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR06
+L HDEP_Mechanical:+3.3V #PWR06
 U 1 1 59D2666E
 P 2000 2500
 F 0 "#PWR06" H 2000 2350 50  0001 C CNN
@@ -328,7 +311,7 @@ F 3 "" H 2000 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PMEG1201AESF D3
+L HDEP_Diodes:PMEG1201AESF D3
 U 1 1 59F1ADCC
 P 8350 2150
 F 0 "D3" V 8456 2022 60  0000 R CNN
@@ -344,7 +327,7 @@ F 8 "0.25Vf 0.1A 12V" V 8244 2022 60  0000 R CNN "C_Value"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PMEG1201AESF D4
+L HDEP_Diodes:PMEG1201AESF D4
 U 1 1 59F1AF99
 P 8350 3450
 F 0 "D4" V 8456 3322 60  0000 R CNN
@@ -360,7 +343,7 @@ F 8 "0.25Vf 0.1A 12V" V 8244 3322 60  0000 R CNN "C_Value"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PMEG1201AESF D1
+L HDEP_Diodes:PMEG1201AESF D1
 U 1 1 59F1B3C6
 P 3500 2200
 F 0 "D1" V 3600 2450 60  0000 R CNN
@@ -376,17 +359,17 @@ F 8 "0.25Vf 0.1A 12V" V 3400 3100 60  0000 R CNN "C_Value"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 2500 4550 3100
+	4550 2500 4550 2600
 Wire Wire Line
-	4550 3700 4550 4000
+	4550 3700 4550 3850
 Wire Wire Line
-	7250 3700 7250 4000
+	7250 3700 7250 3800
 Wire Wire Line
-	7250 2500 7250 3100
+	7250 2500 7250 2550
 Wire Wire Line
-	4550 1600 4550 1900
+	4550 1600 4550 1800
 Wire Wire Line
-	7250 1600 7250 1900
+	7250 1600 7250 1750
 Wire Wire Line
 	7550 2100 7950 2100
 Wire Wire Line
@@ -452,7 +435,7 @@ Wire Wire Line
 	3500 2600 4550 2600
 Connection ~ 4550 2600
 $Comp
-L PMEG1201AESF D2
+L HDEP_Diodes:PMEG1201AESF D2
 U 1 1 59F1BAA5
 P 3500 3500
 F 0 "D2" V 3600 3750 60  0000 R CNN
@@ -477,4 +460,24 @@ Wire Wire Line
 Wire Wire Line
 	3500 3850 4550 3850
 Connection ~ 4550 3850
+Wire Wire Line
+	4550 2850 4550 3050
+Wire Wire Line
+	7250 2850 7250 3050
+Wire Wire Line
+	7250 2550 7250 2850
+Wire Wire Line
+	7250 1750 7250 1900
+Wire Wire Line
+	7250 3050 7250 3100
+Wire Wire Line
+	7250 3800 7250 4000
+Wire Wire Line
+	4550 1800 4550 1900
+Wire Wire Line
+	4550 2600 4550 2850
+Wire Wire Line
+	4550 3050 4550 3100
+Wire Wire Line
+	4550 3850 4550 4000
 $EndSCHEMATC
