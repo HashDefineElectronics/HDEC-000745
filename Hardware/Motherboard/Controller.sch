@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 4
+Sheet 2 2
 Title "HDEX-000745 Microbot"
 Date ""
 Rev "0"
