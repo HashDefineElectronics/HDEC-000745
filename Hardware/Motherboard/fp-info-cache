@@ -1,4 +1,4 @@
-170030903248938
+174711950316329
 HDE_Capacitors
 CAP_0402
 CAP, 0402 (Metric 1005)
@@ -91,8 +91,22 @@ HDE_Connectors
 7
 7
 HDE_Connectors
+6pin_1row_2.54mm_right_angle
+6way, 1row, Through Hole, 2.54mm, Right angle
+M20-9990246
+0
+6
+6
+HDE_Connectors
+10pin_1row_2.54mm_right_angle
+20way, 1row, Through Hole, 2.54mm, Right angle
+M20-9990246
+0
+10
+10
+HDE_Connectors
 20pin_1row_2.54mm
-2way, 1row, Through Hole, 2.54mm
+20way, 1row, Through Hole, 2.54mm
 M20-9990246
 0
 20
@@ -349,6 +363,13 @@ MSOP-10
 0
 10
 10
+HDE_IC
+QFN-24_EP_5x5_Pitch0.65mm
+
+
+0
+29
+25
 HDE_IC
 QFN_VSON-10_DRC
 
